@@ -1780,7 +1780,7 @@ a {
   padding-top: 6rem;
   padding-bottom: 6rem;
   min-height: 50vh;
-  background-image: url("../../../assets/images/banner-quatang.png");
+  background-image: url("../../../assets/images/banner-quatang-1.png");
 }
 .cid-sPAhA7uEqO .mbr-text,
 .cid-sPAhA7uEqO .mbr-section-btn {
@@ -1793,6 +1793,12 @@ a {
 .cid-sPAhA7uEqO .mbr-text,
 .cid-sPAhA7uEqO .link-wrap {
   color: #ffffff;
+}
+@media (max-width: 778px) {
+  .cid-sPAhA7uEqO {
+    background-position: 69% 50%;
+    min-height: auto;
+  }
 }
 .cid-sPAibgahd7 {
   padding-top: 3rem;
