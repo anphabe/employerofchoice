@@ -1930,60 +1930,6 @@ a {
     padding: 2rem;
   }
 }
-.cid-sPA4CnwRg8 {
-  padding-top: 6rem;
-  padding-bottom: 6rem;
-  background-color: #ffffff;
-}
-.cid-sPA4CnwRg8 .mbr-iconfont {
-  font-size: 1.4rem !important;
-  font-family: 'Moririse2' !important;
-  color: #f5a819;
-  margin-left: 1rem;
-}
-.cid-sPA4CnwRg8 .panel-group {
-  border: none;
-}
-.cid-sPA4CnwRg8 .panel-title {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-.cid-sPA4CnwRg8 .panel-body,
-.cid-sPA4CnwRg8 .card-header {
-  padding: 1rem 0;
-}
-.cid-sPA4CnwRg8 .panel-title-edit {
-  color: #000000;
-}
-.cid-sPA4CnwRg8 .card .card-header {
-  background-color: transparent;
-  margin-bottom: 0;
-}
-.cid-sPA4CnwRg8 ul {
-  list-style: none;
-  margin: 0;
-  padding-left: 2.5rem;
-}
-.cid-sPA4CnwRg8 li {
-  position: relative;
-  margin-bottom: 1rem;
-}
-.cid-sPA4CnwRg8 ul li::before {
-  position: absolute;
-  left: -1.6rem;
-  content: "\2022";
-  color: #000000;
-  font-weight: bold;
-  font-size: 1rem;
-  width: 1.6rem;
-}
-@media (max-width: 778px) {
-  .cid-sPA4CnwRg8 {
-    padding-top: 3rem;
-    padding-bottom: 0.15rem;
-  }
-}
 .cid-sPA4CnOuHe {
   padding-top: 5rem;
   padding-bottom: 0rem;
