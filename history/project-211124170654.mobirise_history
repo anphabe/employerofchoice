@@ -1,7 +1,7 @@
 {
   "settings": {
     "name": "Employer of Choice",
-    "currentPage": "index.html",
+    "currentPage": "thongtinquatang.html",
     "theme": {
       "name": "mobirise5",
       "title": "Mobirise 5",
@@ -58,24 +58,21 @@
       }
     ],
     "favicon": false,
-    "mbrsiteDomain": "whj2owqhen",
+    "mbrsiteDomain": "7xmhrjvnef",
     "imageResize": false,
-    "robotsSwitcher": true,
-    "sitemapSwitcher": true,
-    "sitemapSwitcherAuto": "on",
-    "siteUrl": "https://employerofchoice.vn",
+    "robotsSwitcher": false,
+    "sitemapSwitcher": false,
+    "sitemapSwitcherAuto": false,
+    "siteUrl": false,
     "cookiesAlert": false,
     "gdpr": false,
     "witsec-mailform": false,
-    "witsec-white-label": true,
-    "witsec-language": "vi",
-    "witsec-jquery": "3.5.1",
+    "witsec-white-label": false,
+    "witsec-language": false,
+    "witsec-jquery": false,
     "uniqCompNum": 86,
     "versionPublish": "5.5.0",
-    "screenshot": "screenshot.png",
-    "robotsText": "User-agent: *\nDisallow: /cgi-bin\n",
-    "global_header_custom": "<!-- Google Tag Manager -->\n<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':\nnew Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],\nj=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=\n'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);\n})(window,document,'script','dataLayer','GTM-M8KNZ6F');</script>\n<!-- End Google Tag Manager -->\n<script>\nfunction keep_url_query(){\n    let query = window.location.search;\n    \n    if(query == \"\") {\n        return false;\n    }\n    let searchParams = new URLSearchParams(query);\n\n    let atags = document.getElementsByTagName(\"a\"); \n    let i;\n    for (i = 0; i < atags.length; i++) {\n        let new_url = new URL(atags[i].href);\n        for (const [key, value] of searchParams) {\n            new_url.searchParams.set(key, value);\n        }\n        atags[i].href = new_url.toString();  \n    } \n\n}\n\nif (\n    document.readyState === \"complete\" ||\n    (document.readyState !== \"loading\" && !document.documentElement.doScroll)\n) {\n  keep_url_query();\n} else {\n  document.addEventListener(\"DOMContentLoaded\", keep_url_query);\n}\n</script>",
-    "global_after_body": "<!-- Google Tag Manager (noscript) -->\n<noscript><iframe src=\"https://www.googletagmanager.com/ns.html?id=GTM-M8KNZ6F\"\nheight=\"0\" width=\"0\" style=\"display:none;visibility:hidden\"></iframe></noscript>\n<!-- End Google Tag Manager (noscript) -->"
+    "screenshot": "screenshot.png"
   },
   "pages": {
     "index.html": {
@@ -490,7 +487,9 @@
             "a.nav-link:hover": {
               "text-decoration": "underline"
             },
-            ".btn": {},
+            ".btn": {
+              "letter-spacing": "1px"
+            },
             ".btn-primary": {}
           },
           "_name": "menu2",
@@ -553,6 +552,9 @@
                 "line-height": "1",
                 "margin-top": "2rem"
               }
+            },
+            ".btn": {
+              "letter-spacing": "1px"
             }
           },
           "_name": "header11",
@@ -652,6 +654,9 @@
               ".text-wrapper": {
                 "padding": "2rem"
               }
+            },
+            ".btn": {
+              "letter-spacing": "1px"
             }
           },
           "_name": "image1",
@@ -718,7 +723,7 @@
           },
           "_name": "clients1",
           "_sourceTheme": "mobirise5",
-          "_customHTML": "<section data-bs-version=\"5.1\" class=\"clients1\" group=\"Clients\" id=\"company-logos\">\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\">\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"2\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"7\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Title\" name=\"showTitle\">\n        <input type=\"checkbox\" title=\"Subtitle\" name=\"showSubTitle\">\n        <input type=\"checkbox\" title=\"Text\" name=\"showText\">\n        <input type=\"range\" inline title=\"Items\" name=\"items\" min=\"1\" max=\"8\" value=\"8\" step=\"1\">\n        <header>Background</header>\n        <input type=\"color\" title=\"Color\" name=\"bgColor\" value=\"#ffffff\">\n    </mbr-parameters>\n    <div class=\"images-container\" mbr-class=\"{'container-fluid':fullWidth, container:fullWidth==false}\">\n        <div class=\"mbr-section-head\">\n            <h3 class=\"mbr-section-title mbr-fonts-style align-center mb-0\" mbr-theme-style=\"display-2\" mbr-if=\"showTitle\" data-app-selector=\".mbr-section-title\">\n                <b>Our Clients</b>\n            </h3>\n            <h4 class=\"mbr-section-subtitle mbr-fonts-style align-center mb-0 mt-2\" mbr-theme-style=\"display-5\" mbr-if=\"showSubTitle\" data-app-selector=\".mbr-section-subtitle\">For a better look, use pictures of the same size in this block.\n                elit</h4>\n            <p class=\"mbr-text mbr-fonts-style align-center mt-2\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text\">\n                Click on an image in this block to replace it. Set the number of logos in Block Parameters. </p>\n        </div>\n        <div class=\"row justify-content-center mt-4\">\n            <div class=\"col-6 col-md-3 card\">\n                <img src=\"../_images/clients/1.png\">\n            </div>\n            <div class=\"col-6 col-md-3 card\" mbr-if=\"items > 1\">\n                <img src=\"../_images/clients/2.png\">\n            </div>\n            <div class=\"col-6 col-md-3 card\" mbr-if=\"items > 2\">\n                <img src=\"../_images/clients/3.png\">\n            </div>\n            <div class=\"col-6 col-md-3 card\" mbr-if=\"items > 3\">\n                <img src=\"../_images/clients/4.png\">\n            </div>\n            <div class=\"col-6 col-md-3 card\" mbr-if=\"items > 4\">\n                <img src=\"../_images/clients/2.png\">\n            </div>\n            <div class=\"col-6 col-md-3 card\" mbr-if=\"items > 5\">\n                <img src=\"../_images/clients/3.png\">\n            </div>\n            <div class=\"col-6 col-md-3 card\" mbr-if=\"items > 6\">\n                <img src=\"../_images/clients/4.png\">\n            </div>\n            <div class=\"col-6 col-md-3 card\" mbr-if=\"items > 7\">\n                <img src=\"../_images/clients/5.png\">\n            </div>\n        </div>\n    </div>\n</section>",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"clients1\" group=\"Clients\">\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\">\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"2\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"7\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Title\" name=\"showTitle\">\n        <input type=\"checkbox\" title=\"Subtitle\" name=\"showSubTitle\">\n        <input type=\"checkbox\" title=\"Text\" name=\"showText\">\n        <input type=\"range\" inline title=\"Items\" name=\"items\" min=\"1\" max=\"8\" value=\"8\" step=\"1\">\n        <header>Background</header>\n        <input type=\"color\" title=\"Color\" name=\"bgColor\" value=\"#ffffff\">\n    </mbr-parameters>\n    <div class=\"images-container\" mbr-class=\"{'container-fluid':fullWidth, container:fullWidth==false}\">\n        <div class=\"mbr-section-head\">\n            <h3 class=\"mbr-section-title mbr-fonts-style align-center mb-0\" mbr-theme-style=\"display-2\" mbr-if=\"showTitle\" data-app-selector=\".mbr-section-title\">\n                <b>Our Clients</b>\n            </h3>\n            <h4 class=\"mbr-section-subtitle mbr-fonts-style align-center mb-0 mt-2\" mbr-theme-style=\"display-5\" mbr-if=\"showSubTitle\" data-app-selector=\".mbr-section-subtitle\">For a better look, use pictures of the same size in this block.\n                elit</h4>\n            <p class=\"mbr-text mbr-fonts-style align-center mt-2\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text\">\n                Click on an image in this block to replace it. Set the number of logos in Block Parameters. </p>\n        </div>\n        <div class=\"row justify-content-center mt-4\">\n            <div class=\"col-6 col-md-3 card\">\n                <img src=\"../_images/clients/1.png\">\n            </div>\n            <div class=\"col-6 col-md-3 card\" mbr-if=\"items > 1\">\n                <img src=\"../_images/clients/2.png\">\n            </div>\n            <div class=\"col-6 col-md-3 card\" mbr-if=\"items > 2\">\n                <img src=\"../_images/clients/3.png\">\n            </div>\n            <div class=\"col-6 col-md-3 card\" mbr-if=\"items > 3\">\n                <img src=\"../_images/clients/4.png\">\n            </div>\n            <div class=\"col-6 col-md-3 card\" mbr-if=\"items > 4\">\n                <img src=\"../_images/clients/2.png\">\n            </div>\n            <div class=\"col-6 col-md-3 card\" mbr-if=\"items > 5\">\n                <img src=\"../_images/clients/3.png\">\n            </div>\n            <div class=\"col-6 col-md-3 card\" mbr-if=\"items > 6\">\n                <img src=\"../_images/clients/4.png\">\n            </div>\n            <div class=\"col-6 col-md-3 card\" mbr-if=\"items > 7\">\n                <img src=\"../_images/clients/5.png\">\n            </div>\n        </div>\n    </div>\n</section>",
           "_cid": "sPbUyHSqrw",
           "_anchor": "clients1-e",
           "_PHPplaceholders": [],
@@ -1139,9 +1144,9 @@
     },
     "thongtinquatang.html": {
       "settings": {
-        "title": "Thông tin quà tặng | Khảo sát Sinh viên Việt Nam 2022",
+        "title": "Khảo sát Sinh viên Việt Nam 2022 I Thông tin quà tặng",
         "meta_descr": "Chia sẻ ngay, cơ hội nhận quà HAY! ",
-        "header_custom": "<meta property=\"og:site_name\" content=\"https://employerofchoice.vn/\"/>\n<meta property=\"og:rich_attachment\" content=\"true\"/>\n<meta property=\"og:type\" content=\"website\"/>\n<meta name=\"author\" content=\"Anphabe\">\n<meta property=\"og:url\" itemprop=\"url\" content=\"https://employerofchoice.vn/\"/>\n<meta name=\"title\" property=\"og:title\" content=\"Thông tin quà tặng | Khảo sát Sinh viên Việt Nam 2022\">\n<meta name=\"description\" property=\"og:description\" content=\"Thông tin quà tặng | Khảo sát Sinh viên Việt Nam 2022\">\n<meta name=\"twitter:image:src\" content=\"https://employerofchoice.vn/assets/images/share.jpg\">\n<meta property=\"og:image\" content=\"https://employerofchoice.vn/assets/images/share.jpg\">",
+        "header_custom": "<meta property=\"og:site_name\" content=\"https://employerofchoice.vn/\"/>\n<meta property=\"og:rich_attachment\" content=\"true\"/>\n<meta property=\"og:type\" content=\"website\"/>\n<meta name=\"author\" content=\"Anphabe\">\n<meta property=\"og:url\" itemprop=\"url\" content=\"https://employerofchoice.vn/\"/>\n<meta name=\"title\" property=\"og:title\" content=\"Khảo sát Sinh viên Việt Nam 2022\">\n<meta name=\"description\" property=\"og:description\" content=\"Khảo sát Sinh viên Việt Nam 2022 I Thông tin quà tặng\">\n<meta name=\"twitter:image:src\" content=\"https://employerofchoice.vn/assets/images/share.jpg\">\n<meta property=\"og:image\" content=\"https://employerofchoice.vn/assets/images/share.jpg\">",
         "footer_custom": "",
         "html_before": "",
         "order": 2
@@ -1549,7 +1554,9 @@
             "a.nav-link:hover": {
               "text-decoration": "underline"
             },
-            ".btn": {},
+            ".btn": {
+              "letter-spacing": "1px"
+            },
             ".btn-primary": {}
           },
           "_name": "menu2",
