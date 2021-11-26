@@ -1,7 +1,7 @@
 {
   "settings": {
     "name": "Employer of Choice",
-    "currentPage": "thongtinquatang.html",
+    "currentPage": "index.html",
     "theme": {
       "name": "mobirise5",
       "title": "Mobirise 5",
@@ -75,7 +75,9 @@
     "screenshot": "screenshot.png",
     "robotsText": "User-agent: *\nDisallow: /cgi-bin\n",
     "global_header_custom": "<!-- Google Tag Manager -->\n<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':\nnew Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],\nj=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=\n'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);\n})(window,document,'script','dataLayer','GTM-M8KNZ6F');</script>\n<!-- End Google Tag Manager -->\n<script>\nfunction keep_url_query(){\n    let query = window.location.search;\n    \n    if(query == \"\") {\n        return false;\n    }\n    let searchParams = new URLSearchParams(query);\n\n    let atags = document.getElementsByTagName(\"a\"); \n    let i;\n    for (i = 0; i < atags.length; i++) {\n        let new_url = new URL(atags[i].href);\n        for (const [key, value] of searchParams) {\n            new_url.searchParams.set(key, value);\n        }\n        atags[i].href = new_url.toString();  \n    } \n\n}\n\nif (\n    document.readyState === \"complete\" ||\n    (document.readyState !== \"loading\" && !document.documentElement.doScroll)\n) {\n  keep_url_query();\n} else {\n  document.addEventListener(\"DOMContentLoaded\", keep_url_query);\n}\n</script>",
-    "global_after_body": "<!-- Google Tag Manager (noscript) -->\n<noscript><iframe src=\"https://www.googletagmanager.com/ns.html?id=GTM-M8KNZ6F\"\nheight=\"0\" width=\"0\" style=\"display:none;visibility:hidden\"></iframe></noscript>\n<!-- End Google Tag Manager (noscript) -->"
+    "global_after_body": "<!-- Google Tag Manager (noscript) -->\n<noscript><iframe src=\"https://www.googletagmanager.com/ns.html?id=GTM-M8KNZ6F\"\nheight=\"0\" width=\"0\" style=\"display:none;visibility:hidden\"></iframe></noscript>\n<!-- End Google Tag Manager (noscript) -->",
+    "publishType": "local",
+    "publishPath": "@PROJECT_PATH@"
   },
   "pages": {
     "index.html": {
@@ -83,7 +85,7 @@
         "main": true,
         "title": "Khảo sát Sinh viên Việt Nam 2022 I Anphabe",
         "meta_descr": "Bắt đầu tìm việc, bạn đã sẵn sàng? ",
-        "header_custom": "<meta property=\"og:site_name\" content=\"https://employerofchoice.vn/\"/>\n<meta property=\"og:rich_attachment\" content=\"true\"/>\n<meta property=\"og:type\" content=\"website\"/>\n<meta name=\"author\" content=\"Anphabe\">\n<meta property=\"og:url\" itemprop=\"url\" content=\"https://employerofchoice.vn/\"/>\n<meta name=\"title\" property=\"og:title\" content=\"Khảo sát Sinh viên Việt Nam 2022\">\n<meta name=\"description\" property=\"og:description\" content=\"Khảo sát Sinh viên Việt Nam 2022\">\n<meta name=\"twitter:image:src\" content=\"https://employerofchoice.vn/assets/images/share2.jpg\">\n<meta property=\"og:image\" content=\"https://employerofchoice.vn/assets/images/share2.jpg\">",
+        "header_custom": "<meta property=\"og:site_name\" content=\"https://employerofchoice.vn/\"/>\n<meta property=\"og:rich_attachment\" content=\"true\"/>\n<meta property=\"og:type\" content=\"website\"/>\n<meta name=\"author\" content=\"Anphabe\">\n<meta property=\"og:url\" itemprop=\"url\" content=\"https://employerofchoice.vn/\"/>\n<meta name=\"title\" property=\"og:title\" content=\"Khảo sát Sinh viên Việt Nam 2022\">\n<meta name=\"description\" property=\"og:description\" content=\"Khảo sát Sinh viên Việt Nam 2022\">\n<meta name=\"twitter:image:src\" content=\"https://employerofchoice.vn/assets/images/share.jpg\">\n<meta property=\"og:image\" content=\"https://employerofchoice.vn/assets/images/share.jpg\">",
         "footer_custom": "",
         "html_before": ""
       },
@@ -1158,7 +1160,7 @@
       "settings": {
         "title": "Thông tin quà tặng | Khảo sát Sinh viên Việt Nam 2022",
         "meta_descr": "Chia sẻ ngay, cơ hội nhận quà HAY! ",
-        "header_custom": "<meta property=\"og:site_name\" content=\"https://employerofchoice.vn/\"/>\n<meta property=\"og:rich_attachment\" content=\"true\"/>\n<meta property=\"og:type\" content=\"website\"/>\n<meta name=\"author\" content=\"Anphabe\">\n<meta property=\"og:url\" itemprop=\"url\" content=\"https://employerofchoice.vn/\"/>\n<meta name=\"title\" property=\"og:title\" content=\"Thông tin quà tặng | Khảo sát Sinh viên Việt Nam 2022\">\n<meta name=\"description\" property=\"og:description\" content=\"Thông tin quà tặng | Khảo sát Sinh viên Việt Nam 2022\">\n<meta name=\"twitter:image:src\" content=\"https://employerofchoice.vn/assets/images/share2.jpg\">\n<meta property=\"og:image\" content=\"https://employerofchoice.vn/assets/images/share2.jpg\">",
+        "header_custom": "<meta property=\"og:site_name\" content=\"https://employerofchoice.vn/\"/>\n<meta property=\"og:rich_attachment\" content=\"true\"/>\n<meta property=\"og:type\" content=\"website\"/>\n<meta name=\"author\" content=\"Anphabe\">\n<meta property=\"og:url\" itemprop=\"url\" content=\"https://employerofchoice.vn/\"/>\n<meta name=\"title\" property=\"og:title\" content=\"Thông tin quà tặng | Khảo sát Sinh viên Việt Nam 2022\">\n<meta name=\"description\" property=\"og:description\" content=\"Thông tin quà tặng | Khảo sát Sinh viên Việt Nam 2022\">\n<meta name=\"twitter:image:src\" content=\"https://employerofchoice.vn/assets/images/share.jpg\">\n<meta property=\"og:image\" content=\"https://employerofchoice.vn/assets/images/share.jpg\">",
         "footer_custom": "",
         "html_before": "",
         "order": 2
