@@ -72,6 +72,89 @@ if (
 <meta name="description" property="og:description" content="Khảo sát Sinh viên Việt Nam 2022">
 <meta name="twitter:image:src" content="https://employerofchoice.vn/assets/images/share2.jpg">
 <meta property="og:image" content="https://employerofchoice.vn/assets/images/share2.jpg">
+<script>
+      // Google Tag Manager configuration
+      const googleTagId = 'None';
+      const hasGoogleTag = Boolean('None');
+
+      // Initialize Google Tag Manager if ID is provided
+      if (hasGoogleTag) {
+        (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer',googleTagId);
+      }
+      
+      function generateAID() {
+        return (
+          "aid_" + Math.random().toString(36).substr(2, 9) + "_" + Date.now()
+        );
+      }
+
+      function isValidAID(aid) {
+        return (
+          typeof aid === "string" &&
+          aid.startsWith("aid_") &&
+          aid.split("_").length === 3
+        );
+      }
+
+      function getOrCreateAID() {
+        try {
+          if (typeof localStorage === "undefined") {
+            return generateAID();
+          }
+
+          let aid = localStorage.getItem("aaid");
+
+          if (!aid || !isValidAID(aid)) {
+            aid = generateAID();
+            try {
+              localStorage.setItem("aaid", aid);
+              const verifiedAid = localStorage.getItem("aaid");
+              if (verifiedAid !== aid) {
+                return aid;
+              }
+            } catch (e) {
+              return aid;
+            }
+          }
+
+          return aid;
+        } catch (e) {
+          return generateAID();
+        }
+      }
+
+      function redirect(aid) {
+        let targetUrl = "https://anpha.be/eoc";
+        const separator = targetUrl.includes("?") ? "&" : "?";
+        targetUrl = targetUrl + separator + "aid=" + encodeURIComponent(aid);
+        const decodedUrl = targetUrl.replace(/&amp;/g, '&'); 
+        if (hasGoogleTag && window.dataLayer) {
+          // Push page view event to dataLayer before redirect
+          window.dataLayer.push({
+            'event': 'page_view',
+            'page_path': window.location.pathname,
+            'aid': aid
+          });
+          // Small delay to ensure tag fires
+          setTimeout(() => {
+            window.location.replace(decodedUrl);
+          }, 100);
+        } else {
+          window.location.replace(decodedUrl);
+        }
+      }
+
+      try {
+        const aid = getOrCreateAID();
+        redirect(aid);
+      } catch (e) {
+        redirect(generateAID());
+      }
+    </script>
 </head>
 <body>
   <!-- Google Tag Manager (noscript) -->
